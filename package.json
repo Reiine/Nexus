@@ -1,9 +1,12 @@
 {
   "name": "nexuschat",
+  "homepage": "https://reiine.github.com/Nexus/",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "nodemon server.js"
   },
   "keywords": [],
