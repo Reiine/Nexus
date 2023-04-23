@@ -93,7 +93,7 @@ body{
     width: 100%;
 }
 .chatscreen{
-    height: 80vh;
+    height: 75vh;
     overflow-y: scroll;
 
 }
