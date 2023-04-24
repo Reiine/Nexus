@@ -25,6 +25,6 @@ io.on('connection',(socket)=>{
     })
 })
 
-app.use(express.static(path.join(__dirname)));
+app.use(express.static(path.join(__dirname,'/docs')));
 
 server.listen(3000);
