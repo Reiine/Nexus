@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300&display=swap" rel="stylesheet">
+    <!-- font end -->
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Nexus</title>
+</head>
+
+<body>
+    <div class="header">
+        <p>Nexus</p>
+        <button class="hambutton" onclick="visibility()" href="#"><img src="./icons/ham.png" alt="menu"></button>
+    </div>
+    <div class="wholecover">
+        <div class="sidething">
+            <h5>People <span class="numberofusers">0</span></h5><hr noshade size="3" color="black">
+            <div class="people">
+            </div>
+        </div>
+        <div class="messagepart">
+            <div class="chatscreen">
+                <div class="userjoin">
+                </div>
+
+                
+            </div>
+            <div class="chatinput">
+                <input type="text" placeholder="type something..." class="userinput" id="userMsg">
+                <button class="sendbutton" id="userSend">Send</button>
+            </div>
+        </div>
+
+    </div>
+    
+    <script>
+        var sidething = document.querySelector('.sidething');
+        function visibility(){
+            if(sidething.style.display=="inline"){
+                sidething.style.display="none";
+            }
+            else{
+                sidething.style.display="inline";
+            }
+        }
+    </script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/client.js"></script>
+    
+</body>
+
+
+</html>
