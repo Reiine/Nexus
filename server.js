@@ -25,6 +25,6 @@ io.on('connection',(socket)=>{
     })
 })
 
-app.use(express.static(path.join(__dirname+"/public")));
+app.use(express.static(path.join(__dirname)));
 
 server.listen(3000);
