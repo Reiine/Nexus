@@ -4,11 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-<<<<<<< HEAD
-    "start": "nodemon index.js",
-=======
+    "dev": "nodemon index.js",
     "start": "node index.js",
->>>>>>> a642fca88c3125977aea3d5430f60104b3b1d1fa
     "build": "echo 'No build required'"
   },
   "keywords": [],
