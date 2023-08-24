@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "nodemon server.js"
+    "test": "node server.js",
+    "build": "echo 'No build required'"
   },
   "keywords": [],
   "author": "",
