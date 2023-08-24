@@ -173,6 +173,7 @@ body{
     .hambutton>img{
         display: block;
         margin-left: auto;
+        cursor: pointer;
     }
     .chatinput{
         width: 98%;

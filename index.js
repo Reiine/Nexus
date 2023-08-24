@@ -1,6 +1,6 @@
 const express  = require('express')
 const path = require('path');
-
+const port = process.env.PORT || 3000;
 const app = express();
 const server = require('http').createServer(app);
 
@@ -25,6 +25,6 @@ io.on('connection',(socket)=>{
     })
 })
 
-app.use(express.static(path.join(__dirname,'/docs')));
+app.use(express.static(path.join(__dirname,'/')));
 
-server.listen(3000);
+server.listen(port);
